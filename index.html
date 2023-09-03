@@ -1,123 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- google fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<title>Web Portfolio</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Ubuntu:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Web Portfolio</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/header_footer.css">
+    <link rel="stylesheet" href="./styles/modern-normalize.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+
 </head>
 <body>
-	<!-- heading start -->
-	<heading>
-		<nav class="nav-container">
-			<div class="container">	
-				<div class="item1">
-					<a href="#about">About</a>
-				</div>
-				<div class="item2">
-					<a href="#projects">Projects</a>
-				</div>
-				<div class="item3">
-					<a href="#contact">Contact</a>
-				</div>
-			</div>
-		</nav>
-	</heading>
-	<!-- heading end -->
+	<!-- header start -->
+	<header>
+		<div class="img">
+			<img src="./images/bgimg.jpg">
+		</div>
+		<div class="overlay"></div>
+		<div class="quote">
+			<p class="main-quote">
+				"the summit is what drives us, but the climb itself is what matters"
+			</p>
+			<p class="author">
+				~ conrad anker ~
+			</p>
+		</div>
+	</header>
+	<!-- header end -->
 
-	<!-- main start -->
-	<main class="main-container">
-		<section class="about" id="about">
-			<div class="description">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!-- nav start -->
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<div></div>
+	</nav>
+	<!-- nav end -->
+
+	<!-- whole content start here -->
+	<main>	
+		<!-- hero section start -->
+		<section id="hero" class="hero">
+			<div class="hero__container">
+				<img src="./images/herobg.jpg">
 			</div>
-			<div class="div-img">
-				<img src="./images/mypic.JPG" />
+			<div class="hero__overlay"></div>
+			<div class="hero__title">
+				<p class="greet">
+					Hello there! 
+				</p>
+				<p class="name">I'm Emmanuel Pineda</p>
+				<p class="work">
+					a junior fullstack web developer
+				</p>
 			</div>
+			<a href="#about" class="btn">get to know more about me</a>
 		</section>
+		<!-- hero section end -->
 
-		<section class="projects" id="projects">
-			<div class="div-projects p1">
-				<div>
-					<img src="./images/img1.png" />
+		<!-- about section start -->
+		<section id="about" class="about">
+			<div class="about__container">
+				<div class="about__description">
+					<p class="about__first">I like building things from scratch,</p>
+					<p class="about__second">I love the whole journey of it; the process itself is a great challenge and I perceive challenges as opportunities for improvements </p>
+					<p class="about__third">That's why I keep in mind that learning is a never ending journey.</p>	
 				</div>
-				<div>
-					<p><strong>Front End Design</strong></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. </p>
+				<div class="about__img">
+					<img class="profile-img" src="./images/mypic.JPG" />
 				</div>
 			</div>
-			<div class="div-projects p2">
-				<div>
-					<img src="./images/img2.png" />
-				</div>
-				<div>
-					<p><strong>Back End Programming</strong></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. </p>
-				</div>
+		</section> 
+		<!-- about section end -->
+		<hr class="line">
+		<!-- skills and technology section start -->
+		<section class="tech">
+			<h2>Tech Stack</h2>
+			<h3>These are the technologies I work on,</h3>
+			<p>Constantly improving my knowledge and skills in them</p>
+			<div class="tech__container">
+				<ul class="tech__ul">
+				  <li class="tech__list">JavaScript(ES6)</li>
+				  <li class="tech__list">CSS</li>
+				  <li class="tech__list">HTML</li>
+				</ul>
+				<ul class="tech__ul">
+				  <li class="tech__list">ReactJS</li>
+				  <li class="tech__list">ExpressJS</li>
+				  <li class="tech__list">NodeJS</li>
+				</ul>
+				<ul class="tech__ul">
+					<li class="tech__list">MongoDB</li>
+					<li class="tech__list">Postman</li>
+					<li class="tech__list">Git</li>
+				</ul>
 			</div>
-			<div class="div-projects p3">
-				<div>
-					<img src="./images/img3.png" />
-				</div>
-				<div>
-					<p><strong>Full Stact Web Development</strong></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. </p>
-				</div>
-			</div> 
-		</section>
+			<!-- INSERT RESUME DOWNLOAD BUTTON HERE -->
+		</section> 
+		<!-- skills and technology section end -->
+		<hr class="line">
+		<!-- projects section start -->
+<!-- 		<section id="projects">
+			<hr class="line">
+		</section> -->
+		<!-- projects section end -->
 
-		<section class="contact" id="contact">
-			<p>GET IN TOUCH!</p>
-			<div class="form-div">
-				<form>
-					<div>
-						<label for="fullName">Name</label>
-						<input id="fullName" type="text" required autocomplete placeholder="Enter Your Name">
-					<div>
-
-					<div>
-						<label for="email">Email</label>
-						<input id="email" type="email" placeholder="Enter Your Email"required autocomplete />
-					<div>
-
-					<div>
-						<label for="message">Message</label>
-						<textarea id="message" placeholder="Enter Your Message" rows="7" ></textarea>
-					<div>
-
-					<div>
-						<button type="submit">Send Message</button>
-					</div>
+		<!-- contact section start -->
+		<section id="contact" class="contact">
+			<div class="contact__container">	
+				<h2 class="contact__title">connect with me!</h2>
+				<form class="contact__form">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Enter Your Name" />
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="yourname@email.com" required />
+					<label for="message">Inquiry</label>
+					<textarea id="message" placeholder="Write your message here" rows="6" required></textarea>
+					<button class="form-btn">Send Message</button>
 				</form>
-			</div>	
+				<p class="or"><em>or</em></p>
+				<p class="p__email">you can send an email to <em>emmanuelroypineda@gmail.com</em></p>
+			</div>
 		</section>
+		<!-- contact section end -->
 	</main>
-	<!-- main end -->
+	<!-- whole content end -->
 
 	<!-- footer start -->
 	<footer>
-		<div>
-			<p>ERCP | ALL RIGHTS RESERVED | AUGUST 2023</p>
-		</div>
+			<p>&#169; ERCP | All Rights Reserved | August 2023</p>
 	</footer>
 	<!-- footer end -->
+
+	<!-- js scripts -->
+	<script type="text/javascript" src="./src/main.js"></script>
+
 </body>
 </html>

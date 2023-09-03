@@ -1,0 +1,65 @@
+:root{ 
+  --mainClr: #1f1b4b;
+  --clrIndigo200: #c7d2fe;
+  --clrCyan300: #67e8f9;
+  --clrSky400: #38bdf8;
+  --clrTeal500: #14b8ac;
+  --clrBlue100: #dbeafe;
+
+ /*--- for uniform sizing ---*/
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75;
+  --size-sm: 0.875;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: var(--mainClr);
+  font-family: Ubuntu, sans-serif;
+  color: var(--clrIndigo200);
+  max-width: 1500px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clrIndigo200);
+}
+
+a, button, input {
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: var(--size-base);
+}
+
+
