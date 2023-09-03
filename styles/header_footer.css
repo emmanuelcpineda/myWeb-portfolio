@@ -61,6 +61,7 @@ nav.nav-bar {
 	justify-content: space-between;
 	align-items: center;
 	padding: var(--size-lg);
+	background-color: var(--clrTeal500);
 }
 
 nav .nav-container {
@@ -69,6 +70,24 @@ nav .nav-container {
 	height: 4em;
 	align-items: center;
 	gap: var(--size-base);
+}
+
+nav .nav-container a {
+	color: var(--mainClr);
+}
+
+.changeNav {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	heigth: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--size-xl);
+	background-color: var(--clrTeal500);
+	color: var(--mainClr);
 }
 /*----------------------header and nav styling end -------------------------*/
 
