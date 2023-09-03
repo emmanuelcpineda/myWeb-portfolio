@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- remixicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="./styles/swiper-bundle.min.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,12 +114,121 @@
 		</section> 
 		<!-- skills and technology section end -->
 		<hr class="line">
-		<!-- projects section start -->
-<!-- 		<section id="projects">
-			<hr class="line">
-		</section> -->
-		<!-- projects section end -->
 
+		<!-- projects section start -->
+		<section id="projects" class="projects container" >
+			<h2 class="project__title">Projects</h2>
+			<div class="card__container swiper">
+				<div class="card__content">
+					<div class="swiper-wrapper">
+						<!-- first card -->
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img class="card__img" src="./images/img1.png" alt="first image" />
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">
+									First Project
+								</h3>
+								<p class="card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+								<a href="#" class="card__btn">See Project</a>
+							</div>
+						</article>
+
+						<!-- second card -->
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img class="card__img" src="./images/img2.png" alt="first image" />
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">
+									Second Project
+								</h3>
+								<p class="card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+								<a href="#" class="card__btn">See Project</a>
+							</div>
+						</article>
+
+						<!-- third card -->
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img class="card__img" src="./images/img3.png" alt="first image" />
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">
+									Third Project
+								</h3>
+								<p class="card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+								<a href="#" class="card__btn">See Project</a>
+							</div>
+						</article>
+
+						<!-- fourth card -->
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img class="card__img" src="./images/img4.png" alt="first image" />
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">
+									Fourth Project
+								</h3>
+								<p class="card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+								<a href="#" class="card__btn">See Project</a>
+							</div>
+						</article>
+
+						<!-- fifth card -->
+						<article class="card__article swiper-slide">
+							<div class="card__image">
+								<img class="card__img" src="./images/img5.png" alt="first image" />
+							</div>
+
+							<div class="card__data">
+								<h3 class="card__name">
+									Fifth Project
+								</h3>
+								<p class="card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+								<a href="#" class="card__btn">See Project</a>
+							</div>
+						</article>
+
+					</div>
+				</div>
+
+				<!-- nav buttons -->
+				<div class="swiper-button-prev">
+				 	<i class="ri-arrow-left-s-line"></i>
+				</div>
+				<div class="swiper-button-next">
+					<i class="ri-arrow-right-s-line"></i>
+				</div>
+
+				<!-- pagination -->
+  			<div class="swiper-pagination"></div>
+			</div>
+		</section> 
+		<!-- projects section end -->
+		
+		<hr class="line">
 		<!-- contact section start -->
 		<section id="contact" class="contact">
 			<div class="contact__container">	
@@ -142,8 +256,12 @@
 	</footer>
 	<!-- footer end -->
 
-	<!-- js scripts -->
-	<script type="text/javascript" src="./src/main.js"></script>
 
+	<!-- swiper js -->
+	<script src="./src/swiper-bundle.min.js"></script>
+
+	<!-- js scripts -->
+	<script src="./src/main.js"></script>
+ 
 </body>
 </html>
